@@ -28,12 +28,14 @@ macros, the `exec` family, pipes and pipelines, and zombie/orphan processes.
 │   ├── ch8_wait_nonblock.c
 │   ├── ch9_zombie.c
 │   └── ch10_pool.c
-├── lab_report/           # screenshots + lab_report.pdf go here
+├── lab_report/           # completed lab report (screenshots + PDF)
+│   └── Lab 3 Fork and Exec lab Report.pdf
 └── build/, bin/          # created by cmake / make (git-ignored)
 ```
 
 The repo root *is* the submission — clone it, build, and everything the lab
-asks for (source, build files, README, and your `lab_report/`) is right here.
+asks for (source, build files, README, and the completed `lab_report/`) is
+right here.
 
 ## Build
 
@@ -94,7 +96,10 @@ since it execs `./worker`.
 - Zombie observation (ch9, zombie_demo) requires a second terminal running
   `ps -l` during the parent's sleep window.
 
-## Completed
+## Submission status
 
 All demos (5/5) and all challenges (10/10) build warning-free with
-`-Wall -Wextra` and run with the expected output.
+`-Wall -Wextra` and run with the expected output. `lab_report/Lab 3 Fork and
+Exec lab Report.pdf` contains all required screenshots, including a real
+`ps -l` capture of the zombie child in state `Z` (3.5 and Ch9) and a follow-up
+capture confirming it was reaped.
