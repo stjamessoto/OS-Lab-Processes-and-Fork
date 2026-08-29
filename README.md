@@ -6,7 +6,7 @@ macros, the `exec` family, pipes and pipelines, and zombie/orphan processes.
 ## Layout
 
 ```
-os-lab/
+.
 ├── CMakeLists.txt        # CMake build (all targets)
 ├── Makefile              # Make build (all targets -> bin/)
 ├── README.md
@@ -16,19 +16,24 @@ os-lab/
 │   ├── pipe_demo.c       # parent writes 5 lines -> child runs `wc -l`
 │   ├── pipeline_demo.c   # ls | grep <pattern> (2 forks, 1 pipe)
 │   └── zombie_demo.c     # child exits, parent sleeps -> zombie
-└── challenges/           # 10 coding challenges
-    ├── ch1_single_fork.c
-    ├── ch2_multi_child.c
-    ├── ch3_exec_ls.c
-    ├── worker.c          # helper binary for ch4
-    ├── ch4_exec_worker.c
-    ├── ch5_exec_examples.c
-    ├── ch6_pipe_sum.c
-    ├── ch7_pipeline.c
-    ├── ch8_wait_nonblock.c
-    ├── ch9_zombie.c
-    └── ch10_pool.c
+├── challenges/           # 10 coding challenges
+│   ├── ch1_single_fork.c
+│   ├── ch2_multi_child.c
+│   ├── ch3_exec_ls.c
+│   ├── worker.c          # helper binary for ch4
+│   ├── ch4_exec_worker.c
+│   ├── ch5_exec_examples.c
+│   ├── ch6_pipe_sum.c
+│   ├── ch7_pipeline.c
+│   ├── ch8_wait_nonblock.c
+│   ├── ch9_zombie.c
+│   └── ch10_pool.c
+├── lab_report/           # screenshots + lab_report.pdf go here
+└── build/, bin/          # created by cmake / make (git-ignored)
 ```
+
+The repo root *is* the submission — clone it, build, and everything the lab
+asks for (source, build files, README, and your `lab_report/`) is right here.
 
 ## Build
 
